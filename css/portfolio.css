@@ -1,0 +1,254 @@
+body {
+  background-image: url("https://images.pexels.com/photos/207153/pexels-photo-207153.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.container {
+  height: inherit;
+}
+
+.mainRow {
+  position: relative;
+  height: 100%;
+  align-items: center;
+  padding: auto 0;
+}
+
+.left {
+  background-image: linear-gradient(to right, #141e30, #141e30, #1c2431, #141e30, #aaaaaa, #243b55, #243b55);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+  box-shadow: 7px 76px 80px 28px rgba(0, 0, 0, 0.54);
+  border-radius: 0px 0px 0px 0px;
+}
+.left .nameHeading {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.left .nameHeading h1 {
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+.left .row {
+  height: 25%;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.left .centerRow {
+  background-image: url("https://images.unsplash.com/photo-1538534713343-12e627a4f1ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=974&q=80");
+  background-repeat: repeat;
+  background-size: cover;
+  height: 50%;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.left .navLine {
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+}
+.left .navLine a {
+  border-width: 1%;
+}
+.left .navLine a:hover {
+  font-size: 18px;
+  transition: 0.2s ease-in-out;
+  border-bottom: 3px solid #bf0000;
+  border-width: 100%;
+}
+
+.right {
+  background-color: #dedbdc;
+  box-shadow: inset 72px 3px 50px 8px rgba(0, 0, 0, 0.35);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+.right .row {
+  height: 100%;
+}
+.right .col-12 {
+  top: 0;
+  left: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+.right .slogan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+.right .visibleClass {
+  opacity: 1;
+  overflow: hidden;
+  visibility: visible;
+  left: 0;
+}
+.right .notVisible {
+  visibility: hidden;
+  left: 100%;
+}
+.right #aboutSection {
+  box-sizing: border-box;
+}
+.right #aboutSection .aboutText {
+  padding: 0;
+  width: 90%;
+  height: 300px;
+  margin: 50px 5%;
+}
+.right #aboutSection .col-8,
+.right #aboutSection .col-4 {
+  height: 100%;
+}
+.right #aboutSection .col-8 .row,
+.right #aboutSection .col-4 .row {
+  height: 100%;
+}
+.right #aboutSection .abotImages {
+  padding: 0;
+  margin: 0;
+}
+.right #aboutSection .abotImages img {
+  margin: 25px 0%;
+  width: 90%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.right #contactSection {
+  padding: 40px 50px;
+}
+.right #contactSection form input,
+.right #contactSection textarea,
+.right #contactSection button {
+  border: 0 !important;
+  outline: none !important;
+  box-shadow: none;
+  /* margin-top: 25px; */
+}
+.right #contactSection input {
+  height: 26px;
+}
+.right #contactSection .row {
+  margin: 0;
+  margin-top: 25px;
+  padding: 0;
+}
+.right #contactSection textarea {
+  height: 130px;
+}
+.right #contactSection button {
+  display: inline;
+  justify-content: end;
+  background-color: #bf0000;
+  color: white;
+}
+.right #contactSection .twoCols .row,
+.right #contactSection .twoCols input,
+.right #contactSection .twoCols .col-md-6 {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 900px) {
+  .right #contactSection .twoCols :nth-child(1) {
+    padding-right: 12.5px;
+  }
+  .right #contactSection .twoCols :nth-child(2) {
+    padding-left: 12.5px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .right #contactSection .twoCols .phoneInput {
+    margin-top: 25px;
+  }
+}
+.right #contactSection .firsRow div {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (min-width: 600px) {
+  .right #contactSection .firsRow div {
+    padding-right: 12.5px;
+  }
+}
+.right #resumeSection .resumeHeading {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.right #resumeSection .resumeHeading h1 {
+  line-height: 100px;
+  margin: 0;
+  padding: 0;
+}
+.right #resumeSection .contentRow {
+  height: 200px;
+  background-image: linear-gradient(to right, black, lightgray, gray, gray, gray);
+  margin: 0;
+  padding: 0;
+}
+.right #resumeSection .contentRow .eduClass {
+  height: 50px;
+}
+.right #resumeSection .contentRow .yearClass {
+  height: 16px;
+}
+.right #resumeSection .contentRow .contentParts {
+  margin: 0;
+  padding: 20px 20px;
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.right #resumeSection .contentRow .contentParts div {
+  margin: 0;
+  padding: 0;
+}
+.right #resumeSection .paginationRow {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.right #resumeSection .paginationRow .row {
+  height: 50px;
+  padding: 0;
+  margin: 0;
+}
+.right #resumeSection .paginationRow li {
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+.right #resumeSection .paginationRow li:hover {
+  border-top: 2px solid #243B55;
+  border-radius: 23px;
+  font-size: 18px;
+  transition: 0.4s all ease-in-out;
+}
